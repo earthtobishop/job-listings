@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next'
 import { useState } from 'react'
 import { Job } from '../@types'
+import JobList from '../components/jobs/job-list'
 import { getAllJobs } from '../lib/job-util'
 
 type HomePageProps = {
@@ -11,11 +12,7 @@ function HomePage({ allJobs }: HomePageProps) {
   const [jobs, setJobs] = useState(allJobs)
   const [categories, setCategories] = useState([])
 
-  return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
-  )
+  return <JobList jobs={jobs} />
 }
 
 export const getStaticProps: GetStaticProps = async () => {
