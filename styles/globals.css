@@ -4,7 +4,7 @@
 
 body {
   --desaturated-dark-cyan: hsl(180, 29%, 50%);
-  --light-gray-cyan-backgroudn: hsl(180, 52%, 96%);
+  --light-gray-cyan-background: hsl(180, 52%, 96%);
   --light-gray-cyan-tablets: hsl(180, 31%, 95%);
   --dark-gray-cyan: hsl(180, 8%, 52%);
   --very-dark-gray-cyan: hsl(180, 14%, 20%);
@@ -12,4 +12,14 @@ body {
   font-size: 16px;
   margin: 0;
   font-family: 'League Spartan';
+  background-color: #effafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
 }

@@ -10,7 +10,7 @@ interface JobListProps {
 
 function JobList({ jobs, setCategories }: JobListProps) {
   return (
-    <div>
+    <div className={classes.jobList}>
       {jobs.map((job) => (
         <JobCard key={job.id} job={job} setCategories={setCategories} />
       ))}

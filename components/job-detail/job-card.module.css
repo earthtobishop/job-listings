@@ -1,0 +1,163 @@
+.jobCard {
+  background-color: #fff;
+  height: 152px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid var(--desaturated-dark-cyan);
+  border-radius: 5px;
+  padding: 0 30px;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info .top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.company {
+  color: var(--desaturated-dark-cyan);
+  font-size: 18px;
+}
+
+.status {
+  background-color: var(--desaturated-dark-cyan);
+  color: #fff;
+  height: 24px;
+  width: 51px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.position {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.position:hover {
+  color: var(--desaturated-dark-cyan);
+}
+
+.featured {
+  background-color: var(--very-dark-gray-cyan);
+  color: #fff;
+  height: 24px;
+  width: 79px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.info .bottom {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: medium;
+  color: var(--dark-gray-cyan);
+  align-items: center;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #b7c4c4;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tab {
+  color: var(--desaturated-dark-cyan);
+  background-color: hsl(180, 31%, 95%);
+  height: 32px;
+  width: 57.75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab:hover {
+  background-color: var(--desaturated-dark-cyan);
+  color: #fff;
+}
+
+.roleTab {
+  color: var(--desaturated-dark-cyan);
+  background-color: hsl(180, 31%, 95%);
+  height: 32px;
+  width: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roleTab:hover {
+  background-color: var(--desaturated-dark-cyan);
+  color: #fff;
+}
+
+.imageWrapper > img {
+  height: 88px;
+  width: 88px;
+}
+
+@media only screen and (max-width: 768px) {
+  .jobCard {
+    width: 327px;
+    height: 257px;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px;
+    justify-content: space-around;
+  }
+  .details {
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+  }
+
+  .imageWrapper > img {
+    height: 48px;
+    width: 48px;
+    transform: translate(-5.5rem, -3rem);
+  }
+
+  .position {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .info .bottom {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: medium;
+    color: var(--dark-gray-cyan);
+    align-items: center;
+  }
+}
