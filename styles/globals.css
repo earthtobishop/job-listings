@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --light-gray-cyan-backgroudn: hsl(180, 52%, 96%);
+  --light-gray-cyan-tablets: hsl(180, 31%, 95%);
+  --dark-gray-cyan: hsl(180, 8%, 52%);
+  --very-dark-gray-cyan: hsl(180, 14%, 20%);
+
+  font-size: 16px;
+  margin: 0;
+  font-family: 'League Spartan';
+}

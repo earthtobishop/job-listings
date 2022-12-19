@@ -1,5 +1,6 @@
 import React from 'react'
 import { Job } from '../../@types'
+import classes from './job-card.module.css'
 
 type JobCardProps = {
   key: number
