@@ -51,6 +51,7 @@ const JobCard = ({ job }: JobCardProps) => {
           <div className={classes.middle}>
             <div className={classes.position}>{position}</div>
           </div>
+
           <div className={classes.bottom}>
             <div>{postedAt}</div>
             <span className={classes.dot}></span>
@@ -58,6 +59,7 @@ const JobCard = ({ job }: JobCardProps) => {
             <span className={classes.dot}></span>
             <div>{location}</div>
           </div>
+          <span className={classes.divider}></span>
         </div>
       </div>
       <div className={classes.tabs}>

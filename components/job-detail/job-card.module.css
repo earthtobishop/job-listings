@@ -141,6 +141,10 @@
     flex-direction: column;
   }
 
+  .divider {
+    border-top: 1px solid #b7c4c4;
+  }
+
   .imageWrapper > img {
     height: 48px;
     width: 48px;
