@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import { Job } from '../../@types'
+import { Job } from '../../../@types'
 import classes from './job-card.module.css'
 
 type JobCardProps = {
@@ -9,9 +9,7 @@ type JobCardProps = {
   setCategories: React.Dispatch<React.SetStateAction<string[]>>
 }
 
-const JobCard = ({ job }: JobCardProps) => {
-  console.log(job)
-
+const JobCard = ({ job, setCategories }: JobCardProps) => {
   const {
     company,
     logo,
@@ -29,7 +27,15 @@ const JobCard = ({ job }: JobCardProps) => {
 
   const formattedImagePath = logo.slice(1)
 
-  console.log(formattedImagePath)
+  const handleSetCategory = (category: string) => {
+    setCategories((prevState) => {
+      if (!prevState.includes(category)) {
+        return prevState.concat(category)
+      }
+
+      return prevState
+    })
+  }
 
   return (
     <div className={classes.jobCard}>
@@ -63,9 +69,18 @@ const JobCard = ({ job }: JobCardProps) => {
         </div>
       </div>
       <div className={classes.tabs}>
-        <div className={classes.roleTab}>{role}</div>
+        <div
+          className={classes.roleTab}
+          onClick={() => handleSetCategory(role)}
+        >
+          {role}
+        </div>
         {tools.map((tool) => (
-          <div className={classes.tab} key={tool}>
+          <div
+            className={classes.tab}
+            key={tool}
+            onClick={() => handleSetCategory(tool)}
+          >
             {tool}
           </div>
         ))}

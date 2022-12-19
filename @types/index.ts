@@ -1,7 +1,5 @@
 type Role = 'Frontend' | 'Backend' | 'Fullstack'
 type Level = 'Junior' | 'Midweight' | 'Senior'
-type Language = 'Python' | 'Ruby' | 'JavaScript' | 'HTML' | 'CSS'
-type Tool = 'React' | 'Sass' | 'Vue' | 'Django' | 'RoR' | 'Ruby'
 type Contract = 'Full Time' | 'Part Time' | 'Contract'
 type Location = 'Worldwide' | 'USA Only' | 'UK Only' | 'Remote'
 
@@ -17,6 +15,6 @@ export interface Job {
   postedAt: string
   contract: Contract
   location: Location
-  languages: Language[]
-  tools: Tool[] | []
+  languages: string[]
+  tools: string[]
 }

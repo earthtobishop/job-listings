@@ -1,6 +1,6 @@
 import React from 'react'
 import { Job } from '../../@types'
-import JobCard from '../job-detail/job-card'
+import JobCard from './job-detail/job-card'
 import classes from './job-list.module.css'
 
 interface JobListProps {
