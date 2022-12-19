@@ -4,6 +4,7 @@ import { Job } from '../../@types'
 type JobCardProps = {
   key: number
   job: Job
+  setCategories: React.Dispatch<React.SetStateAction<string[]>>
 }
 
 const JobCard = ({ job }: JobCardProps) => {
