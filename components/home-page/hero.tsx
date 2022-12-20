@@ -1,7 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react'
-// import bgHeaderDesktop from '../../public/images/bg-header-desktop.svg'
-// import bgHeaderMobile from '../../public/images/bg-header-mobile.svg'
 import classes from './hero.module.css'
 
 const Hero = () => {
